@@ -60,6 +60,7 @@ int main() {
 		sort(a, a+n);
 		memset(dp, 0, sizeof(dp));
 		int res = DP(0)-1;
+		if (res<0) res+=M;
 		int d = digits(res);
 		for (int i=0;i<8-d;i++) {
 			cout << 0;
